@@ -1,0 +1,13 @@
+version: '1.0'
+services:
+  jupyter-conda-notebook:
+    build:
+      context: .
+      dockerfile:  ./docker/jupyter-conda-notebook/Dockerfile
+      args:
+        - --build-arg CONDA_ENV
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/notebooks
+    
