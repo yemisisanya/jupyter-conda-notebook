@@ -30,4 +30,4 @@ RUN jupyter nbextension enable --py --sys-prefix ipysheet
 
 EXPOSE 8888
 
-ENTRYPOINT ["/.entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
